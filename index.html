@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personal Website — Dyoplify</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <img src="/assets/favicon.svg" alt="logo" class="logo" />
+        <h1 class="brand-name">Dyoplify</h1>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Hello — I build things that solve problems.</h2>
+        <p class="lead">I’m a developer and designer. This site outlines my projects, skills, and interests.</p>
+        <p><a class="btn" href="#projects">See projects</a></p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h3>About Me</h3>
+        <p>Professional summary, skills and expertise, technologies and tools. Add your short bio here.</p>
+        <ul>
+          <li>Professional summary</li>
+          <li>Skills and expertise</li>
+          <li>Technologies / Tools</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h3>Projects</h3>
+        <div class="cards">
+          <article class="card">
+            <h4>Project Title</h4>
+            <p>Short description. Technologies used and links to demo or repo.</p>
+            <p class="muted">Technologies: HTML, CSS, JavaScript</p>
+          </article>
+          <article class="card">
+            <h4>Another Project</h4>
+            <p>Short description. Technologies used and links to demo or repo.</p>
+            <p class="muted">Technologies: Demo, GitHub</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="section">
+      <div class="container">
+        <h3>Blog</h3>
+        <p>Recent posts and highlights. Link out to full posts as needed.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h3>Contact</h3>
+        <p>If you want to reach out, add your contact form or email here.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Dyoplify — Built with the Tech Blue design system.</p>
+      <p class="muted">Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
